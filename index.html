@@ -7,14 +7,22 @@
 </head>
 <body>
     <script>
-        let firstValue = prompt ("Enter a first number");
+        let firstValue = prompt("Enter a first number");
         let operator = prompt ("Enter an operator");
         let secondValue = prompt ("Enter a second number");
+            firstValue = parseInt(firstValue);
+            secondValue = parseInt(secondValue);
+        switch(operator){
+            case("+"):
+                result = firstValue + secondValue;
+                break;
+            default:
+                result = firstValue - secondValue;
+        }
+        
+        console.log(result);
 
-        console.log(firstValue);
-        console.log(secondValue);
-        console.log(operator);
-
+        
         
 
     </script>

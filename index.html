@@ -12,12 +12,20 @@
         let secondValue = prompt ("Enter a second number");
             firstValue = parseInt(firstValue);
             secondValue = parseInt(secondValue);
+        let result;
         switch(operator){
             case("+"):
                 result = firstValue + secondValue;
                 break;
-            default:
+            case("-"):
                 result = firstValue - secondValue;
+                break;
+            case("*"):
+                result = firstValue *  secondValue;
+            case("/"):
+                result = firstValue / secondValue;
+            default:
+                result = "Invalid operator";
         }
         
         console.log(result);
